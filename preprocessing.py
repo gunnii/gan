@@ -16,6 +16,7 @@ def crop():
         if not os.path.exists(crop_path):
             os.makedirs(crop_path)
         os.system(command)
+        print(IMG_PATH + ' cropped !!!')
     print('[Preprocessing] image crop completed!!!')
 
 def load_mat():

@@ -6,7 +6,6 @@ from torch.autograd import Variable
 from model import Discriminator
 from model import Generator
 
-
 class Solver(object):
     def __init__(self, config, data_loader):
         self.generator = None
