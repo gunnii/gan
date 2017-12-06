@@ -1,16 +1,8 @@
-
-# coding: utf-8
-
-# In[2]:
-
 import os
 import scipy.io as si
 import json
 import datetime
 import numpy as np
-
-
-# In[22]:
 
 # crop datasets, you should install autocrop
 # pip install autocrop
@@ -92,8 +84,9 @@ def get_category(age):
     elif age >= 60:
         return "F"
     
-    
-# 99/crop folder가 있으면, 전처리 완료된 것으로 간주
-# json file이 없으면, make info, save info
-
-
+def get_imagepath():
+    result = []
+    for x in range(0, 100):
+        path = 'dataset/wiki_crop/' + str(x).zfill(2)
+        result.append(path)
+    return result
